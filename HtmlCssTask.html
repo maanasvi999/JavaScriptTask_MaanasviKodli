@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+h2{
+	background-color: #3bb3db;
+	color: white;
+	text-align:center;
+ 	padding: 15px 20px;
+  	border: none;
+    border: 1px;
+  	border-radius: 5px;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 100px;
+  margin-top: 25px;
+  width:45%;
+}
+
+.input-container{
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+
+.icon {
+  padding: 10px;
+  background: white;
+  color: silver;
+  min-width: 50px;
+  text-align: center;
+  border: 0.5px solid;
+}
+
+.input-field{
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: 0.5px solid silver;
+}
+
+.input-field:focus {
+  border: 0.5px solid silver;
+}
+
+.btn, .fb, .gg, .ep {
+  color: white;
+  padding: 15px 20px;
+  border: 1px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 20px
+}
+
+.rem{
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.btn{
+	background-color: #3bb3db;
+    font-weight: bold;
+}
+
+.fb{
+	background-color: #3b5998;
+    font-family: Lucida Sans;
+    font-size:20px;
+    font-weight: bold;
+    
+}
+
+.gg{
+	background-color: red;
+    font-family: Lucida-Sans;
+    font-size:20px;
+    font-weight: bold;
+}
+
+.ep{
+	background-color: #B0B02D;
+    font-weight: bold;
+}
+
+.or{
+ padding: 2px 2px;
+ margin-bottom: -40px;
+}
+
+p {
+ color:silver;
+}
+a{
+color:silver;
+width:100%;
+text-decoration: none
+}
+
+.lef{
+float:left;
+}
+
+.reg{
+float:right;
+}
+
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<form style="max-width:500px;margin:auto" id="form">
+  <div><h2>Sign In</h2>
+  </div>
+
+  <div class="input-container">
+    <input class="input-field" type="text" placeholder="email@example.com" name="email" id="email">
+    <i class="fa fa-envelope icon"></i>
+  </div>
+  
+  <div class="input-container">
+    <input class="input-field" type="password" placeholder="password" name="psw" id="password">
+    <i class="fa fa-lock icon"></i>
+  </div>
+  <button type="submit" class="btn" id="submit" >SIGN IN</button>
+  <br> <br>
+
+  <div class="lef"> <a href="">Forgot Your Password?</a></div>
+  <div class="reg"><a href="">Register!</a></div>
+   
+  <div class="input-container or">
+    <hr> <p> OR </p> <hr></div>
+    
+    <button class="fb">f</button> <br> <br>
+    <button class="gg" >g</button>  <br> <br> <br> <br>
+    <button class="ep" > < EPAM LOGIN ></button>
+</form>
+
+</body>
+
+<script type="text/javascript" src="script.js"> </script>
+
+</html>
